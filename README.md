@@ -28,7 +28,7 @@ The Covid-19 Vaccination Tracker will have one screen with a modal. The modal wi
 
 ***
 
-![alt text](https://i.imgur.com/cZOlT7P.png)
+![alt text](https://i.imgur.com/hpmPrmT.png)
 
 ***
 
