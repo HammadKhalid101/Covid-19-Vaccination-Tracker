@@ -55,7 +55,7 @@ The Covid-19 Vaccination Tracker will have one screen with a modal. The modal wi
 * Day 4
  * Finish scroller
  * Make sure everything is working, run additonal tests
- * Fix up styling, responsiveness
+  * Fix up styling, responsiveness
 
 
 
