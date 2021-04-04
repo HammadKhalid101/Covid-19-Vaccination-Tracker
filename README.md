@@ -35,27 +35,27 @@ The Covid-19 Vaccination Tracker will have one screen with a modal. The modal wi
 ## Implementation Timeline
 
 * Day 1
-Make sure devlopment enviornment has no issues
-Set up Api calls and receive data from the CDC using Socrata.
-Write functions to organize data
-Learn how to implement DataMaps using D3.js
+** Make sure devlopment enviornment has no issues
+** Set up Api calls and receive data from the CDC using Socrata.
+** Write functions to organize data
+** Learn how to implement DataMaps using D3.js
 
 * Day 2
-Make modal
-Make the main page layout (navbar, filter, map, scroller)
-Add nabvar links to the project Github, my LinkedIn, and personal site
-Add filter by manufacturer
-Get started on map
+** Make modal
+** Make the main page layout (navbar, filter, map, scroller)
+** Add nabvar links to the project Github, my LinkedIn, and personal site
+** Add filter by manufacturer
+** Get started on map
 
 * Day 3 
-Finish creating the map and start incorporating data on the map
-Add functionality to hover and get information on the map
-Get started on bottom scorller, to show data by week
+** Finish creating the map and start incorporating data on the map
+** Add functionality to hover and get information on the map
+** Get started on bottom scorller, to show data by week
 
 * Day 4
-Finish scroller
-Make sure everything is working, run additonal tests
-Fix up styling, responsiveness
+** Finish scroller
+** Make sure everything is working, run additonal tests
+** Fix up styling, responsiveness
 
 
 
