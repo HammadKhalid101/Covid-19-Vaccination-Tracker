@@ -11,11 +11,9 @@ Covid-19 Vaccination Tracker is a data visualization application. It utilizes US
 ## Functionality & MVP
 
 With the Covid-19 Vaccination Tracker, users will be able to:
-* Select a vaccine manufacturer to look at their data
-* Look at data by states
+* Select a vaccine manufacturer to filter data
+* Visualize data on a map / Hover over a state to get number of first and second doses administered
 * Look at various stages of vaccination (each week)
-* Visualize the Covid-19 Vaccination data on a map
-* Hover over a state to get number of first/second doses administered
 
 ***
 
