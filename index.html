@@ -5,12 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./dist/main.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+      </style>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+    <script src="/datamaps.world.min.js"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+    <script src="node_modules/datamaps/dist/datamaps.usa.min.js"></script>
+    <script src="./dist/main.js"></script>
     <title>Covid-19 Vaccination Tracker</title>
   </head>
 
   <body>
-    <script src="./dist/main.js"></script>
-
-    <h1>Covid Vaccination Tracker</h1>
+    <div class="main-div">
+      <div class="modal">
+        <div class="modal-personal-links-container">
+          <a href="https://www.linkedin.com/in/hammad-khalid-071823143/"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/HammadKhalid101/Covid-19-Vaccination-Tracker"
+            >Github</a
+          >
+          <a href="https://hammad-khalid.com/">Personal Site</a>
+        </div>
+        <div class="modal-heading-container">
+          <h1 class="modal-heading-text">
+            COVID-19 Vaccination Data Visualizer
+          </h1>
+        </div>
+        <div class="modal-fact-container">
+          <p class="modal-fact-text">
+            Across the USA, 110,987,384 people have been vaccinated
+          </p>
+        </div>
+        <div class="modal-map-button-container">
+          <button class="modal-map-button">Look at the map</button>
+        </div>
+      </div>
+      <div class="visualizer">
+        <header class="visualizer-header">
+          <div class="modal-personal-links-container">
+            <a href="https://www.linkedin.com/in/hammad-khalid-071823143/"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/HammadKhalid101/Covid-19-Vaccination-Tracker"
+              >Github</a
+            >
+            <a href="https://hammad-khalid.com/">Personal Site</a>
+          </div>
+          <div class="visualizer-heading-container">
+            <h1 class="visualizer-heading-text">
+              COVID-19 Vaccination Data Visualizer
+            </h1>
+          </div>
+        </header>
+        <section class="main-section">
+          <div class="filter-container">
+            <h4 class="filter-text">Filter</h4>
+            <div class="filter-div">
+              <p class="filter-manufacturer-text">Manufacturer</p>
+              <ul class="filter-buttons">
+                <li class="filter-button-li"><button class="filter-button">Pfizer</button></li>
+                <li class="filter-button-li"><button class="filter-button">Moderna</button></li>
+                <li class="filter-button-li"><button class="filter-button">Janssen</button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="map-container">
+            <div class="map-top">
+              <div class="map-week-container">
+                <p>Week: 04/05/2021 - 04/11/2021</p>
+              </div>
+              <div class="map-key">
+                <p class="map-key-green">1st Dose Green</p>
+                <p class="map-key-blue">2nd Dose Blue</p>
+              </div>
+            </div>
+            <div class="usa-map">
+                <div id="map" class="map"></div>
+                <script>
+                    const map = new Datamap({ 
+                      scope: 'usa', 
+                      element: document.getElementById('map'),
+                      geographyConfig: {
+                        highlightBorderColor: '#bada55',
+                        // popupTemplate: (geography, data) => {
+                        //   return '<div class="hoverinfo>'
+                        // }
+                      }
+                    });
+                </script>
+            </div>
+            <div class="scroller-container">
+              <div class="scroller-text-div">
+                <p class="scroller-text">Drag to see by week</p>
+              </div>
+              <div class="scroller-div">
+                <div class="scroller">SCROLLER WILL GO HERE</div>
+              </div>
+          </div>
+        </section>
+      </div>
+      <div class="footer-container">
+        <footer class="footer">
+          <div class="footer-content">
+            <p>This site is using data provided by the CDC through Socrata.</p>
+            <p>Data is updated weekly, for the latest information, please visit the <a href="https://www.cdc.gov/">CDC</a> website</p>
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
