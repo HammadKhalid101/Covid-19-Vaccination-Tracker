@@ -12,16 +12,17 @@
     justify-content: space-around;
 
     .modal-personal-links-container {
-      width: 275px;
-      background-color: #ececec;
       display: flex;
       justify-content: space-evenly;
-      margin-left: 50%;
-      transform: translateX(-50%);
-      border: 2px solid black;
-      height: 30px;
-      border-radius: 10px;
       align-items: center;
+      transform: translateX(-50%);
+      margin-left: 50%;
+      width: 275px;
+      z-index: 10;
+      height: 30px;
+      background-color: #ececec;
+      border: 2px solid black;
+      border-radius: 10px;
 
       a {
         font-size: 18px;
@@ -122,8 +123,8 @@
 
 .map {
   width: 1300px;
-  height: 800px;
-  top: -100px;
+  height: 400px;
+  top: -200px;
   position: relative;
 }
 
@@ -183,5 +184,29 @@
         }
       }
     }
+  }
+}
+
+.hoverinfo {
+  color: black;
+  strong {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.green-text {
+  strong {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0, 228, 0);
+  }
+}
+
+.blue-text {
+  strong {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(59, 177, 255);
   }
 }
