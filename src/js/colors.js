@@ -42,4 +42,5 @@ export const colors = {
   80000: "rgb(0,253,0)",
   70000: "rgb(0,254,0)",
   60000: "rgb(0,255,0)",
+  defaultFill: "gray",
 };

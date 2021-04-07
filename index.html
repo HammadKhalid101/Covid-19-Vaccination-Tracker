@@ -8,9 +8,6 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
       </style>
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-    <script src="/datamaps.world.min.js"></script> -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
     <script src="node_modules/datamaps/dist/datamaps.usa.min.js"></script>
@@ -69,9 +66,9 @@
             <div class="filter-div">
               <p class="filter-manufacturer-text">Manufacturer</p>
               <ul class="filter-buttons">
-                <li class="filter-button-li"><button class="filter-button">Pfizer</button></li>
-                <li class="filter-button-li"><button class="filter-button">Moderna</button></li>
-                <li class="filter-button-li"><button class="filter-button">Janssen</button></li>
+                <li class="filter-button-li"><button id="pfizer" class="pfizer-button">Pfizer</button></li>
+                <li class="filter-button-li"><button id="moderna" class="moderna-button">Moderna</button></li>
+                <li class="filter-button-li"><button id="janssen" class="janssen-button">Janssen</button></li>
               </ul>
             </div>
           </div>
@@ -87,18 +84,6 @@
             </div>
             <div class="usa-map">
                 <div id="map" class="map"></div>
-                <!-- <script>
-                    const map = new Datamap({ 
-                      scope: 'usa', 
-                      element: document.getElementById('map'),
-                      geographyConfig: {
-                        highlightBorderColor: '#bada55',
-                        // popupTemplate: (geography, data) => {
-                        //   return '<div class="hoverinfo>'
-                        // }
-                      }
-                    });
-                </script> -->
             </div>
             <div class="scroller-container">
               <div class="scroller-text-div">

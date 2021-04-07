@@ -2,7 +2,7 @@ export const calculateFill = (numDoses) => {
   if (numDoses >= 6000000) {
     return "6000000";
   } else if (numDoses < 6000000 && numDoses >= 5000000) {
-    return "500000";
+    return "5000000";
   } else if (numDoses < 5000000 && numDoses >= 4000000) {
     return "4000000";
   } else if (numDoses < 4000000 && numDoses >= 3500000) {

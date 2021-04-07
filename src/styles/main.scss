@@ -1,5 +1,5 @@
 .main-div {
-  background-color: #ececec;
+  background-color: black;
 }
 .visualizer {
   width: 100%;
@@ -168,6 +168,7 @@
     height: 100%;
     margin-left: 50%;
     transform: translateX(-50%);
+    color: white;
 
     .footer-content {
       p {
