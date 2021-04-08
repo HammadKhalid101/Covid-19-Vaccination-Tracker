@@ -31,10 +31,10 @@
   align-items: center;
   margin: 0px 100px;
   height: 80%;
-  border: 1px solid;
+  border: 2px solid white;
   border-radius: 8px;
   overflow-y: hidden;
-  background-color: rgb(255, 255, 255);
+  background-color: #002a51;
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
     0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.4);
   animation: pop 1.5s;
@@ -57,7 +57,7 @@
   h1 {
     font-size: 60px;
     font-weight: 600;
-    color: #ff6347;
+    color: #1fc7ba;
   }
 }
 
@@ -69,9 +69,9 @@
   margin-top: 100px;
 
   p {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
-    color: black;
+    color: #f1f1f1;
   }
 }
 
@@ -82,22 +82,23 @@
   align-items: center;
   width: 200px;
   margin-top: 50px;
-  background-color: white;
 
   button {
-    font-size: 16px;
+    font-size: 20px;
     background: none;
     outline: none;
     border: none;
     height: inherit;
     width: inherit;
-    border: 1px solid tomato;
+    background-color: #1fc7ba;
+    border: 2px solid white;
     border-radius: 10px;
+    color: white;
   }
 
   button:hover {
     cursor: pointer;
-    background-color: tomato;
+    background-color: #fb5000;
     color: white;
   }
 }

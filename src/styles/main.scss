@@ -1,5 +1,5 @@
 .main-div {
-  background-color: black;
+  background-color: #002a51;
 }
 .visualizer {
   width: 100%;
@@ -11,27 +11,40 @@
     flex-direction: column;
     justify-content: space-around;
 
-    .modal-personal-links-container {
+    .personal-links-container {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       transform: translateX(-50%);
       margin-left: 50%;
-      width: 275px;
+      width: 500px;
+      height: 50px;
       z-index: 10;
-      height: 30px;
-      background-color: #ececec;
-      border: 2px solid black;
-      border-radius: 10px;
 
-      a {
-        font-size: 18px;
-        text-decoration: none;
-        color: #ff6347;
-      }
+      .personal-link-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 120px;
 
-      a:hover {
-        color: #ff0000;
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: inherit;
+          width: inherit;
+          font-size: 16px;
+          text-decoration: none;
+          background-color: #1fc7ba;
+          border: 2px solid white;
+          border-radius: 10px;
+          color: white;
+        }
+
+        a:hover {
+          background-color: #fb5000;
+        }
       }
     }
 
@@ -45,7 +58,7 @@
       h1 {
         font-size: 30px;
         font-weight: 600;
-        color: #ff6347;
+        color: #1fc7ba;
       }
     }
   }
@@ -56,26 +69,26 @@
   justify-content: center;
 
   .filter-container {
-    margin: 0px 20px 0px 20px;
-    width: 200px;
-    background-color: #ececec;
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
-    height: 200px;
-    border-radius: 10px;
     align-items: center;
+    margin: 0px 20px 0px 20px;
+    width: 200px;
+    height: 200px;
+    background-color: #ececec;
+    border: 2px solid black;
+    border-radius: 10px;
 
     .filter-text {
       margin-top: 10px;
       font-size: 18px;
-      color: #ff6347;
+      color: #fb5000;
     }
 
     .filter-div {
       height: 150px;
-      background-color: #ff6347;
-      color: black;
+      background-color: #f5b400;
+      color: #002a51;
       border-radius: 10px;
       width: 175px;
       margin-top: 10px;
@@ -100,6 +113,7 @@
 
         button {
           font-size: 16px;
+          color: #f1f1f1;
           background: none;
           outline: none;
           border: none;
@@ -107,6 +121,7 @@
 
         button:hover {
           cursor: pointer;
+          color: #fb5000;
         }
       }
     }

@@ -1,6 +1,6 @@
 import "./styles/index.scss";
-import { drawMap } from "./js/draw_map";
-import { pfizerAPI, modernaAPI, janssenAPI } from "./js/api_util";
+// import { drawMap } from "./js/draw_map";
+// import { pfizerAPI, modernaAPI, janssenAPI } from "./js/api_util";
 
 document.addEventListener("DOMContentLoaded", () => {
   const pfizerButton = document.querySelector("#pfizer");
