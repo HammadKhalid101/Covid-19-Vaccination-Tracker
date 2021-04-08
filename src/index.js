@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const pfizerButton = document.querySelector("#pfizer");
   const modernaButton = document.querySelector("#moderna");
   const janssenButton = document.querySelector("#janssen");
+  const modalButton = document.querySelector(".modal-map-button");
+
+  modalButton.addEventListener("click", () => {
+    const modal = document.querySelector(".modal");
+    modal.classList.add("remove-modal");
+  });
 
   pfizerButton.addEventListener("click", () => {
     newMap(pfizerAPI);
