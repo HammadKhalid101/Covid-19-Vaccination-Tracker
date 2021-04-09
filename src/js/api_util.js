@@ -34,3 +34,5 @@ const janssenAPI = fetch(
 });
 
 module.exports = { pfizerAPI, modernaAPI, janssenAPI };
+
+// module.exports = { pfizerAPI };
