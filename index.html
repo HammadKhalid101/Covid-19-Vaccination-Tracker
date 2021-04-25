@@ -38,18 +38,28 @@
         <header class="visualizer-header">
           <div class="personal-links-container">
             <div class="personal-link-div">
-              <a href="https://www.linkedin.com/in/hammad-khalid-071823143/"
+              <a
+                href="https://www.linkedin.com/in/hammad-khalid-071823143/"
+                rel="noreferrer"
+                target="_blank"
                 >LinkedIn</a
               >
             </div>
             <div class="personal-link-div">
               <a
                 href="https://github.com/HammadKhalid101/Covid-19-Vaccination-Tracker"
+                rel="noreferrer"
+                target="_blank"
                 >Github</a
               >
             </div>
             <div class="personal-link-div">
-              <a href="https://hammad-khalid.com/">Personal Site</a>
+              <a
+                href="https://hammad-khalid.com/"
+                rel="noreferrer"
+                target="_blank"
+                >Personal Site</a
+              >
             </div>
           </div>
           <div class="visualizer-heading-container">
@@ -65,9 +75,10 @@
               <p class="filter-manufacturer-text">Manufacturer</p>
               <ul class="filter-buttons">
                 <li class="filter-button-li">
-                  <button id="pfizer" class="pfizer-button active">
-                    Pfizer
-                  </button>
+                  <button id="all" class="all-button active">All</button>
+                </li>
+                <li class="filter-button-li">
+                  <button id="pfizer" class="pfizer-button">Pfizer</button>
                 </li>
                 <li class="filter-button-li">
                   <button id="moderna" class="moderna-button">Moderna</button>
@@ -99,7 +110,7 @@
                 <input
                   type="range"
                   min="0"
-                  max="17"
+                  max="100"
                   value="0"
                   step="1"
                   id="scroller"

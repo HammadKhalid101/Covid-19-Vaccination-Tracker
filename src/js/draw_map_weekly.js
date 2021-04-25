@@ -4,6 +4,7 @@ const { calculateFill } = require("./calculate_fill");
 const { colors } = require("./colors");
 
 export const drawMapWeekly = (apiData, week) => {
+  // debugger;
   apiData.then((data) => {
     let stateWeekly = {};
 
