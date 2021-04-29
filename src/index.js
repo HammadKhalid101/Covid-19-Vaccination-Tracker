@@ -3,6 +3,7 @@ import "regenerator-runtime/runtime.js";
 import { drawMap } from "./js/draw_map";
 import { pfizerAPI, modernaAPI, janssenAPI } from "./js/api_util";
 import { formatData } from "./js/format_data";
+import { formatDataWeekly } from "./js/format_data_weekly";
 
 document.addEventListener("DOMContentLoaded", () => {
   const modalButton = document.querySelector(".modal-map-button");
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     removeActive(allButton, pfizerButton, modernaButton, janssenButton);
     addActive(allButton);
     slider.value = 0;
-    // slider.max = 16;
+    slider.max = 20;
     combinedDataMap();
   });
 
@@ -29,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     removeActive(allButton, pfizerButton, modernaButton, janssenButton);
     addActive(pfizerButton);
     slider.value = 0;
-    slider.max = 19;
+    slider.max = 20;
     singleMap(pfizerAPI);
   });
 
@@ -67,10 +68,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  slider.value = 0;
+  slider.max = 19;
   combinedDataMap();
 });
 
-function newMap(apiData, week) {
+function newMap(apiData) {
   const mapParent = document.querySelector(".usa-map");
   const map = document.querySelector("#map");
 
@@ -81,7 +84,7 @@ function newMap(apiData, week) {
   map.parentNode.removeChild(map);
   mapParent.appendChild(newMap);
   // debugger;
-  drawMap(apiData, week);
+  drawMap(apiData);
 }
 
 async function singleMap(apiData, week) {
@@ -94,8 +97,12 @@ async function singleMap(apiData, week) {
     console.log(e);
   }
 
-  let formattedData = formatData(manufacturerData, week);
-  // debugger;
+  let formattedData;
+  if (week) {
+    formattedData = formatDataWeekly(manufacturerData, week);
+  } else {
+    formattedData = formatData(manufacturerData);
+  }
   newMap(formattedData);
 }
 
@@ -104,7 +111,6 @@ async function combinedDataMap(week) {
   let modernaData = [];
   let janssenData = [];
 
-  let maxLength = pfizerData.length;
   try {
     pfizerData = await pfizerAPI();
     modernaData = await modernaAPI();
@@ -113,15 +119,15 @@ async function combinedDataMap(week) {
     console.log("Error");
     console.log(e);
   }
-
   const total = pfizerData.concat(modernaData).concat(janssenData);
-  // if week call formatDataWeekly else call formatData
-  // formatDataWeekly should return an array with max length of pfizer data
-  // each ele will be an obj
-  // each obj will have they key of that week
-  // value will be all states with allocations
-  let formattedData = formatData(total, week);
-  // debugger;
+  let formattedData;
+
+  if (week) {
+    formattedData = formatDataWeekly(total, week);
+  } else {
+    formattedData = formatData(total);
+  }
+
   newMap(formattedData);
 }
 

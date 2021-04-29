@@ -1,10 +1,23 @@
-const { formatData } = require("./format_data");
 const { formatNumber } = require("./format_num");
 const { colors } = require("./colors");
 
 export const drawMap = (apiData) => {
   const stateTotal = apiData;
-  // debugger;
+
+  let weekElement = document.getElementById("week");
+
+  const dateObj = new Date(apiData.week);
+  const fullDate = dateObj.toLocaleDateString(undefined, {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  if (apiData.allData) {
+    weekElement.innerText = `Uptil week of ${fullDate}`;
+  } else {
+    weekElement.innerText = `Week of ${fullDate}`;
+  }
 
   const map = new Datamap({
     scope: "usa",
