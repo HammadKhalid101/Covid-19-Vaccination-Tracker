@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     removeActive(allButton, pfizerButton, modernaButton, janssenButton);
     addActive(janssenButton);
     slider.value = 0;
-    slider.max = 5;
+    slider.max = 6;
     singleMap(janssenAPI);
   });
 
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   slider.value = 0;
-  slider.max = 19;
+  slider.max = 20;
   combinedDataMap();
 });
 
@@ -83,7 +83,7 @@ function newMap(apiData) {
 
   map.parentNode.removeChild(map);
   mapParent.appendChild(newMap);
-  // debugger;
+
   drawMap(apiData);
 }
 
@@ -163,25 +163,3 @@ function selectedManufacturer(
     return janssenAPI;
   }
 }
-
-// Scroller/Slider variables
-
-let inputValue = null;
-const week = [
-  "04/12/2021",
-  "04/05/2021",
-  "03/29/2021",
-  "03/22/2021",
-  "03/15/2021",
-  "03/08/2021",
-  "03/01/2021",
-  "02/22/2021",
-  "02/15/2021",
-  "02/08/2021",
-  "02/01/2021",
-  "01/25/2021",
-  "01/18/2021",
-  "01/11/2021",
-  "01/04/2021",
-  "12/28/2020",
-];

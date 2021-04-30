@@ -4,7 +4,7 @@ const { colors } = require("./colors");
 export const drawMap = (apiData) => {
   const stateTotal = apiData;
 
-  let weekElement = document.getElementById("week");
+  const weekElement = document.getElementById("week");
 
   const dateObj = new Date(apiData.week);
   const fullDate = dateObj.toLocaleDateString(undefined, {
