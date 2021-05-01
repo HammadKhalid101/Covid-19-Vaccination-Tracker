@@ -1,12 +1,14 @@
 .main-div {
   background-color: #002a51;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 .visualizer {
   width: 100%;
-  height: 100%;
+  height: 85vh;
 
   .visualizer-header {
-    height: 120px;
+    height: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -66,7 +68,9 @@
 
 .main-section {
   display: flex;
-  justify-content: center;
+  height: 85%;
+  justify-content: space-evenly;
+  // justify-content: center;
 
   .filter-container {
     display: flex;
@@ -132,37 +136,124 @@
   }
 }
 
+.map-container {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .map-top {
   display: flex;
   justify-content: space-between;
 }
 
 .usa-map {
-  height: 700px;
+  // height: 700px;
+  width: 100%;
+  height: 90%;
 }
 
 .map {
-  width: 1300px;
-  height: 400px;
-  top: -200px;
-  position: relative;
+  // width: 1300px;
+  // height: 400px;
+  top: -75px;
 }
 
 .map-week-container {
   color: #ff6347;
 }
 
-.map-key {
+.map-key-div {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 20px 0px 20px;
   width: 250px;
-  justify-content: space-evenly;
+  height: 500px;
+  background-color: #ececec;
+  border: 2px solid black;
+  border-radius: 10px;
 
-  .map-key-green {
-    color: rgb(0, 228, 0);
+  .key-text {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fb5000;
   }
 
-  .map-key-blue {
-    color: rgb(59, 177, 255);
+  ul {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 450px;
+    background-color: #f5b400;
+    color: #002a51;
+    border-radius: 10px;
+    margin-top: 10px;
+    justify-content: space-evenly;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 7px;
+
+      div {
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      span {
+        align-items: center;
+        margin-left: 5px;
+        color: white;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+      }
+
+      .map-key-6-mil {
+        background-color: #0b1d78;
+      }
+
+      .map-key-3-mil {
+        background-color: #0045a5;
+      }
+
+      .map-key-1-mil {
+        background-color: #0069c0;
+      }
+
+      .map-key-5-hund {
+        background-color: #008ac5;
+      }
+
+      .map-key-1-hund {
+        background-color: #00a9b5;
+      }
+
+      .map-key-50-thou {
+        background-color: #01c698;
+      }
+
+      .map-key-25-thou {
+        background-color: #18c7be;
+      }
+
+      .map-key-10-thou {
+        background-color: #5cc4d3;
+      }
+
+      .map-key-5-thou {
+        background-color: #8fc0d5;
+      }
+
+      .map-key-1 {
+        background-color: #b2beca;
+      }
+    }
   }
 }
 
@@ -175,17 +266,9 @@
 
   .scroller-div {
     margin-left: 50px;
-    width: 250px;
+    width: 50vw;
 
     .scroller {
-      // -webkit-appearance: none;
-      // width: 100%;
-      // height: 3px;
-      // background: white;
-      // outline: none;
-      // opacity: 0.7;
-      // -webkit-transition: 0.2s;
-      // transition: opacity 0.2s;
       -webkit-appearance: none;
       width: 100%;
       height: 10px;
@@ -197,18 +280,7 @@
       transition: opacity 0.2s;
     }
 
-    // .scroller:hover {
-    //   opacity: 1;
-    // }
-
     .scroller::-webkit-slider-thumb {
-      // -webkit-appearance: none;
-      // appearance: none;
-      // width: 25px;
-      // height: 25px;
-      // border-radius: 12px;
-      // background: #1fc7ba;
-      // cursor: pointer;
       -webkit-appearance: none;
       appearance: none;
       width: 25px;
@@ -219,11 +291,6 @@
     }
 
     .scroller::-moz-range-thumb {
-      // width: 25px;
-      // height: 25px;
-      // border-radius: 12px;
-      // background: #1fc7ba;
-      // cursor: pointer;
       width: 25px;
       height: 25px;
       border-radius: 50%;
@@ -234,7 +301,7 @@
 }
 
 .footer-container {
-  height: 150px;
+  height: 15vh;
 
   footer {
     display: flex;
@@ -247,7 +314,7 @@
 
     .footer-content {
       p {
-        font-size: 12px;
+        font-size: 14px;
         margin-top: 30px;
 
         a {
@@ -284,5 +351,47 @@
     font-size: 14px;
     font-weight: 600;
     color: rgb(59, 177, 255);
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .main-div {
+    height: 1500px;
+  }
+
+  .visualizer {
+    height: 85%;
+  }
+
+  .footer-container {
+    height: 15%;
+  }
+}
+
+@media only screen and (min-width: 3000px) {
+  .main-div {
+    height: 2500px;
+  }
+
+  .visualizer {
+    height: 85%;
+  }
+
+  .footer-container {
+    height: 15%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .usa-map {
+    width: 350px;
+    height: 210px;
+  }
+}
+
+@media only screen and (max-width: 1450px) and (max-height: 900px) {
+  .usa-map {
+    width: 700px;
+    height: 400px;
   }
 }
