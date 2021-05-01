@@ -58,9 +58,14 @@ export const drawMap = (apiData) => {
     fills: colors,
     data: stateTotal,
   });
+
+  window.addEventListener("resize", function (event) {
+    map.resize();
+  });
+
   map.labels({
     labelColor: "white",
     fontFamily: "Roboto",
-    fontSize: 12,
+    fontSize: 14,
   });
 };
