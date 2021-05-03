@@ -1,7 +1,7 @@
 .main-div {
   background-color: #002a51;
   min-height: 100vh;
-  min-width: 100vw;
+  // min-width: 100vw;
 }
 .visualizer {
   width: 100%;
@@ -184,7 +184,7 @@
   ul {
     display: flex;
     flex-direction: column;
-    width: 225px;
+    width: 220px;
     height: 450px;
     background-color: #f5b400;
     color: #002a51;
@@ -315,7 +315,8 @@
     .footer-content {
       p {
         font-size: 14px;
-        margin-top: 30px;
+        margin-top: 20px;
+        line-height: 1.5;
 
         a {
           text-decoration: none;
@@ -358,40 +359,39 @@
   .main-div {
     height: 1500px;
   }
-
-  .visualizer {
-    height: 85%;
-  }
-
-  .footer-container {
-    height: 15%;
-  }
 }
 
 @media only screen and (min-width: 3000px) {
   .main-div {
     height: 2500px;
   }
+}
 
-  .visualizer {
-    height: 85%;
+@media only screen and (max-width: 1450px) and (max-height: 950px) {
+  .main-div {
+    height: 900px;
   }
 
-  .footer-container {
-    height: 15%;
+  .map {
+    top: 0;
+  }
+
+  .scroller-container .scroller-div {
+    width: 40vw;
   }
 }
 
-@media only screen and (max-width: 900px) {
-  .usa-map {
-    width: 350px;
-    height: 210px;
+@media screen and (max-width: 1300px) and (min-width: 1000px),
+  (max-height: 850px) {
+  .main-div {
+    height: 800px;
   }
-}
 
-@media only screen and (max-width: 1450px) and (max-height: 900px) {
-  .usa-map {
-    width: 700px;
-    height: 400px;
+  .map {
+    top: 0;
+  }
+
+  .scroller-container .scroller-div {
+    width: 40vw;
   }
 }
