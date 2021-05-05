@@ -1,5 +1,7 @@
 # Covid-19-Vaccination-Tracker
 
+![alt text](https://github.com/HammadKhalid101/Covid-19-Vaccination-Tracker/blob/main/CVT_LOGO.png "CVT Logo")
+
 ***
 
 ## Background
