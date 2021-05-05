@@ -2,8 +2,11 @@
 
 ![alt text](https://github.com/HammadKhalid101/Covid-19-Vaccination-Tracker/blob/main/CVT_LOGO.png "CVT Logo")
 
+***
+
 [COVID-19 Vaccination Tracker Live](https://hammadkhalid101.github.io/Covid-19-Vaccination-Tracker/)
 
+***
 ![alt text](https://i.imgur.com/umfUJXf.gif[/img])
 
 ***
