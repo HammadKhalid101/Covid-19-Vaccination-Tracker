@@ -1,7 +1,6 @@
 .main-div {
   background-color: #002a51;
   min-height: 100vh;
-  // min-width: 100vw;
 }
 .visualizer {
   width: 100%;
@@ -12,6 +11,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    .header-icon {
+      position: fixed;
+      margin-top: 20px;
+      margin-left: 50px;
+
+      img {
+        width: 150px;
+      }
+    }
 
     .personal-links-container {
       display: flex;
